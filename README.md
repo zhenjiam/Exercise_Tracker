@@ -64,37 +64,38 @@ The UI must have the following 3 pages:
   - Home Page.
   - Edit Exercise Page.
   - Create Exercise Page.
-  
+
+
 1. Home Page
-  - This page is rendered when the app starts up.
-  - The page must display the data for all the exercises stored in MongoDB.
-  - The page must get the data by calling the endpoint GET /exercises in the REST API.
-  - The data must be displayed in an HTML table.
-  - Each row must display the 5 properties listed in the data model. The ID value must not be displayed.
-  - In addition to the data, each row must include 2 icons from the React Icons library Links to an external site., one to support deleting the row and the other for updating the row.
-      - You can choose any suitable icon from the library that clearly indicates the correct use of clicking on it.
-      - Clicking on the delete icon must immediately delete the row by calling the endpoint DELETE /exercises/:id in the REST API.
-      - Clicking on the edit icon must take the user to the Edit Exercise Page.
-  - You must implement a React component for the table and another for the row. You can implement as many React components beyond these two as you want, e.g., the row itself may contain other React components.
-  - This page must include a way for the user to go to the Create Exercise Page.
-      - It is your choice how you present this functionality as long as it is clear how the user can go to that page.
-      - For example, you can provide a link or an icon with informational text.
+    - This page is rendered when the app starts up.
+    - The page must display the data for all the exercises stored in MongoDB.
+    - The page must get the data by calling the endpoint GET /exercises in the REST API.
+    - The data must be displayed in an HTML table.
+    - Each row must display the 5 properties listed in the data model. The ID value must not be displayed.
+    - In addition to the data, each row must include 2 icons from the React Icons library Links to an external site., one to support deleting the row and the other for updating the row.
+        - You can choose any suitable icon from the library that clearly indicates the correct use of clicking on it.
+        - Clicking on the delete icon must immediately delete the row by calling the endpoint DELETE /exercises/:id in the REST API.
+        - Clicking on the edit icon must take the user to the Edit Exercise Page.
+    - You must implement a React component for the table and another for the row. You can implement as many React components beyond these two as you want, e.g., the row itself may contain other React components.
+    - This page must include a way for the user to go to the Create Exercise Page.
+        - It is your choice how you present this functionality as long as it is clear how the user can go to that page.
+        - For example, you can provide a link or an icon with informational text.
     
 2. Edit Exercise Page
-  - This page will allow the user to edit the specific exercise for which the user clicked the edit icon.
-  - The controls to edit the exercise must be pre-populated with the existing data for that row.
-  - You must provide a button that:
-      - Saves the updated exercise by calling the endpoint PUT /exercises/:id in the REST API,
-      - Shows an alert to the user with a message about the update being successful, and
-      - Automatically takes the user back to the Home page.
+    - This page will allow the user to edit the specific exercise for which the user clicked the edit icon.
+    - The controls to edit the exercise must be pre-populated with the existing data for that row.
+    - You must provide a button that:
+        - Saves the updated exercise by calling the endpoint PUT /exercises/:id in the REST API,
+        - Shows an alert to the user with a message about the update being successful, and
+        - Automatically takes the user back to the Home page.
 
 3. Create Exercise Page
-  - This page will allow the user to add a new exercise to the database.
-  - You must provide input controls for the user to enter the 5 required properties.
-  - You must provide a button that:
-      - Saves this new exercise by calling the endpoint POST /exercises in the REST API,
-      - Shows an alert to the user with a message about the creation being successful, and
-      - Automatically takes the user back to the Home page.
+    - This page will allow the user to add a new exercise to the database.
+    - You must provide input controls for the user to enter the 5 required properties.
+    - You must provide a button that:
+        - Saves this new exercise by calling the endpoint POST /exercises in the REST API,
+        - Shows an alert to the user with a message about the creation being successful, and
+        - Automatically takes the user back to the Home page.
       
 Global Design Features
   - You must use a <select> element to provide the options for selecting the value of units in the Edit Exercise Page and the Create Exercise Page.
