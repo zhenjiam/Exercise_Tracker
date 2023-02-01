@@ -65,7 +65,7 @@ The UI must have the following 3 pages:
   - Edit Exercise Page.
   - Create Exercise Page.
   
- Home Page
+1. Home Page
   - This page is rendered when the app starts up.
   - The page must display the data for all the exercises stored in MongoDB.
   - The page must get the data by calling the endpoint GET /exercises in the REST API.
@@ -80,7 +80,7 @@ The UI must have the following 3 pages:
       - It is your choice how you present this functionality as long as it is clear how the user can go to that page.
       - For example, you can provide a link or an icon with informational text.
     
-Edit Exercise Page
+2. Edit Exercise Page
   - This page will allow the user to edit the specific exercise for which the user clicked the edit icon.
   - The controls to edit the exercise must be pre-populated with the existing data for that row.
   - You must provide a button that:
@@ -88,7 +88,7 @@ Edit Exercise Page
       - Shows an alert to the user with a message about the update being successful, and
       - Automatically takes the user back to the Home page.
 
-Create Exercise Page
+3. Create Exercise Page
   - This page will allow the user to add a new exercise to the database.
   - You must provide input controls for the user to enter the 5 required properties.
   - You must provide a button that:
