@@ -97,6 +97,7 @@ The UI must have the following 3 pages:
         - Shows an alert to the user with a message about the creation being successful, and
         - Automatically takes the user back to the Home page.
       
+      
 Global Design Features
   - You must use a <select> element to provide the options for selecting the value of units in the Edit Exercise Page and the Create Exercise Page.
   - Your app must have a Navigation component and provide global navigation for the Home Page and Create Exercise Page.
